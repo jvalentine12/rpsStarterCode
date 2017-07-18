@@ -1,33 +1,24 @@
-<!DOCTYPE html>
 <html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+    <h1> ROCK PAPER SCISSORS!!!!!  </h1>
+<div id="center">
+      <button value="rock" id='rock' class="choice1" onClick="choose('rock')">Rock</button>
+      <button value="paper" id='paper' class="choice1" onClick="choose('paper')">Paper</button>
+      <button value="scissors" id='scissors' class="choice1" onClick="choose('scissors')">Scissors</button>
+    </div>
+<p id="choice"></p>
+<p id="another"></p>
 
-    <head>
-        <title>
-        <!-- Enter a title for your game here -->
-        </title>
-        <link type='text/css' rel='stylesheet' href='style.css' />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src='script.js'></script>
-    </head>
-
-    <body>
-
-        <div class="container">
-            <div class="choice" id="rock" onClick='handleUserClick(this.id)'>rock</div>
-            <div class="choice" id="paper" onClick='handleUserClick(this.id)'>paper</div>
-            <div class="choice" id="scissors" onClick='handleUserClick(this.id)'>scissors</div>
-
-            <p>
-                <strong>Computer's choice:</strong><br/>
-                <span id="computer-choice"></span>
-            </p>
-            <p>
-                <strong>Winner:</strong><br/>
-                <span id="winner"></span>
-            </p>
-
-        </div>
-
-  </body>
-
+<div id="resetb">
+    <div id="winner"></div>
+<button class="button"> Reset Game</button>
+<br>
+</div>
+</body>
 </html>
